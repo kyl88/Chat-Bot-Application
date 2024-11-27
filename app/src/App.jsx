@@ -53,7 +53,8 @@ function App() {
 
     let apiMessages = chatMessages.map((messageObject) => {
       let role ='';
-
+      // Declare role and user
+      
       if (messageObject.sender === "ChatGPT") {
          role = "assistant"
       } else {
